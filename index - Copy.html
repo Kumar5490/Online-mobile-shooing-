@@ -1,0 +1,195 @@
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <link rel="stylesheet" type="text/css" href="css1.css">
+      <script type="text/javascript" src="mouse.js"></script>
+  </head>
+<body>
+ <section><header class="header" style="background:#232f3e;">
+  <div class="logo"style="width:150px;height:10px;
+     margin-left:20px;padding-top: 10px;">RockShop<sub>.com</sub></div>
+  <div class="right" style="float: right;color: white; margin-right: 20px;">
+  <span class="drop-down"><a onmouseover="AccFunction()" class="drop-btn">
+ <font size="5px;">Hi,<%String email=(String)session.getAttribute( "email" );
+            if(email!=null){
+            out.print(email);}%></a>
+    <span id="Drop-down" class="dropdowncontent">
+      <a href="yourorder.jsp">Your Order</a>
+      <a href="checkorder.jsp">Check order detail</a>
+      <a href="logout.jsp">LogOut</a>
+      <a href="changepassword.jsp">Change Password</a></span></span></div>
+    
+    <!--Search form closed-->
+<div class="hbottom"style="width:1300px;margin-left:15px;
+     border:3px solid gray;">        
+   <a href="index.jsp"><span>Home</span></a>
+  <!--Mobiles Dropdown menu-->
+  <span class="dropdown" style="">
+      <a onmouseover="myFunction()" class="dropbtn">Mobile</a>
+  <span id="myDropdown" class="dropdown-content">
+   <table><tbody><tr><td rowspan="2"><dl><dt>Brands</dt>
+    <dd><a href="./Mobile/acer.jsp">
+       <img src="./Mobile/Acer/acer .jpg"height="35px;"></a></dd>
+    <dd><a href="./Mobile/apple.jsp">
+       <img src="./Mobile/Apple/AppleBrand.jpg"height="30px;"></a></dd>
+   <dd><a href="./Mobile/asus.jsp">
+      <img src="./Mobile/Asus/is.jpg"height="40px;"></a></dd>
+   <dd><a href="./Mobile/blackberry.jsp">
+  <img src="./Mobile/Blackberry/BlackBerryBrand.jpg"height="30px;"></a></dd>
+   <dd><a href="./Mobile/gionee.jsp">
+ <img src="./Mobile/Gionee/GioneeBrand.jpg"height="30px;"></a></dd></dl></td>        
+  <td rowspan="2"><dl><dd><a href="./Mobile/htc.jsp"height="40px;">
+  <img src="./Mobile/htc/HtcBrand.jpg"></a></dd>
+  <dd> <a href="./Mobile/intex.jsp">
+    <img src="./Mobile/Intex/intex.jpg"height="30px;"></a></dd>
+  <dd><a href="./Mobile/iball.jsp">
+    <img src="./Mobile/iBall/iball.jpg"height="40px;"width="80px;"></a></dd>
+  <dd><a href="./Mobile/lava.jsp">
+   <img src="./Mobile/Lava/lava.jpg"></a></dd>
+  <dd><a href="./Mobile/lenovo.jsp">
+   <img src="./Mobile/Lenovo/lenovoBrand.jpg"></a></dd></dl></td>
+  <td rowspan="2"><dl><dd><a href="./Mobile/micromax.jsp">
+   <img src="./Mobile/Micromax/MicromaxBrand.jpg"></a></dd>
+   <dd><a href="./Mobile/motorola.jsp">
+   <img src="./Mobile/Motorola/moto.jpg"height="40px;"width="80px;"></a></dd>
+  <dd><a href="./Mobile/nokia.jsp">
+   <img src="./Mobile/Nokia/NokiaBrand.jpg"></a></dd>
+  <dd><a href="./Mobile/oppo.jsp">
+   <img src="./Mobile/Oppo/oppo.jpg"height="30px;"width="80px;"></a></dd>
+  <dd><a href="./Mobile/panasonic.jsp">
+   <img src="./Mobile/panasonicLogo.png"height="30px;"></a></dd></dl></td>
+  <td rowspan="2"><dl><dd><a href="./Mobile/samsung.jsp">
+   <img src="./Mobile/Samsung/samsungLogo.png"></a></dd>
+  <dd><a href="./Mobile/sony.jsp">
+   <img src="./Mobile/Sony/SonyBrand.jpg"width="70px;"></a></dd>
+  <dd><a href="./Mobile/vivo.jsp">
+   <img src="./Mobile/vivo.jpg"height="30px;"width="80px;"></a></dd>
+  <dd><a href="./Mobile/xiomee.jsp">
+   <img src="./Mobile/xiaomi.jpg"height="40px;"></a></dd>
+  <dd><a href="./Mobile/xolo.jsp">
+    <img src="./Mobile/XoloBrand.jpg"height="30px;"></a></dd>
+ </dl></td></tr></tbody></table></span></span><!--Mobiles Dropdown End...-->
+    <a href="Tablets/tablets.jsp"><span>Tablets</span></a>
+  <span class="dropdown">
+      <a onmouseover="Function()" class="dropbtn">Accessories</a>
+  <span id="Dropdown" class="dropdown-content"><a href="">Memory Cards</a>
+      <a href="">Flip Cover</a><a href="">Battery</a>
+      <a href="">Charger</a><a href="">Headphones</a></span></span>
+  <span class="log" style="width: 200px;height:50px; margin: 5px;" >
+     <a  href="login.jsp">Login</a></span>
+  <span class="reg"><a href="Register.jsp">Signup</a></span>
+  <span class="cart"><a href="">
+          Cart(<%String Qty=(String)session.getAttribute( "Qty" );
+     if(Qty!=null) { out.print(Qty); } %>)</a></span></div></header></section>
+<!--Header Section Ends..-->		
+<section><div class="middle" style="min-height:500px; 
+     margin-left:150px;margin-right:200px;">
+<table><tr><td><img src="./Tablets/en.png"width="1000px;"height="200px;"></td>
+ <td></td>
+    </tr></table>
+    <img src="./Mobile/images/tax.jpg">
+  <marquee style="margin-top: 60px;">
+   <img src="./Mobile/images/slider2.jpg" height="300px;">
+   <img src="./Mobile/images/slider4.jpg" height="300px;">
+   <img src="./Mobile/images/984x340_J_series.jpg"height="300px;"></marquee>
+   <img src="./Mobile/images/new_1.jpg" width="1000px;">
+  <div id="slide" ><div class="mslide" >
+<table><tr style="text-align:center;font-family:sans-serif;font-size:20px;">
+  <td>iPhone6s Plus</td><td>Samsung J7</td><td>Aqua Ace</td><td>X3s White
+  </td></tr>
+  <tr><td><a href="iPhone6Plus.html">
+   <img src="./Mobile/Apple/AppleiPhone6Plus .jpg" style=""></a></td>
+   <td><a href=""><img src="./Mobile/Samsung/J7-123.jpg"
+                       style="width:200px;"></a></td>
+   <td><a href=""><img src="./Mobile/Lenovo/lenovo_a6000.jpg" 
+                       style="width:200px;"></a></td>  
+   <td><a href=""><img src="./Mobile/images/X3s-White.jpg" 
+                       style="width:200px;"></a></td></tr></table>
+    </div></div>
+     <img src="./Mobile/images/fproduct.jpg"style="margin-top: 450px;">
+<div id="slide"><div class="mslide">
+ <table><tr style="text-align:center;font-family:sans-serif;font-size: 20px;">
+          <td>Canvas Knight2</td><td>Lumia640XL</td>
+          <td>Juice 3 Plus</td><td>Nokia Lumia 730</td>
+          <td>Canvas Mad(A94)</td></tr>
+  <tr><td> <a href="canvasknight2.html">
+    <img src="./Mobile/Micromax/canvasknight2.jpg"></a></td>
+   <td><a href="MicrosoftLumia640XL.html">
+    <img src="./Mobile/Microsoft/Lumia640XL.jpg"height="300px;"></a></td>
+   <td><a href=""><img src="./Mobile/images/Juice-3-Plus.jpg"></a></td>  
+   <td><a href="NokiaLumia730.html">
+    <img src="./Mobile/Nokia/NokiaLumia730.jpg"height="300px;"></a></td>
+    <td><a href="canvasmad.html">
+            <img src="./Mobile/Micromax/canvasmad.jpg"</td>  
+  </tr></table>
+     </div></div>
+     <img src="./Mobile/images/bestsells.jpg"width="1000px;"
+          style="margin-top: 400px;">
+<div id="slide"style="margin-bottom: 80px;"><div class="mslide">
+ <table><tr style="text-align:center;font-family:sans-serif;font-size:20px;">
+       <td>Canvas Sparx</td><td>Lumia 630</td>
+       <td>iPhone6S(16GB)</td><td>X3s White</td></tr>
+    <tr><td><a href="canvasspark.html">
+    <img src="./Mobile/Micromax/canvassparx.jpg"height="300px;"></a></td>
+       <td><a href="NokiaLumia630.html">
+    <img src="./Mobile/Nokia/NokiaLumia630.jpg"height="300px;"></a></td>
+       <td><a href="iPhone6S(16GB).html">
+    <img src="./Mobile/Apple/iPhone6S(16GB).jpg"></a></td>  
+    <td><a href=""><img src="./Mobile/images/X3s-White.jpg"></a></td></tr>
+   </table></div></div>
+   <img src="./Mobile/images/accessories.jpg"style="margin-top: 300px;">
+     <div id="slide" style="margin-bottom:400px;"><div class="mslide" >
+ <table><tr style="text-align:center;font-family:sans-serif;font-size:20px;">
+            <td>SD-Card</td><td>Screenguard</td></tr>
+  <tr><td><a href=""><img src="./Mobile/images/sd_card.jpg"></a></td>
+ <td><a href=""><img src="./Mobile/images/screengaurd.jpg"></a></td>
+  </tr></table></div></div></div></section>
+<%=new java.util.Date()%>    
+        
+<section><div style="background:#000033;">
+<table>
+<tr><td ><h3 style="margin-left:50px;color:white;
+             font-style:italic;">Get to know us</h3></td>
+<td><h3 style="margin-left: 80px;color: white;"
+        font-style: italic;>Connect to us</h3></td>
+<td><h3 style="margin-left: 100px;color: white; 
+        font-style: italic;">Let us help You</h3></td>
+ <td><h3 style="margin-left: 150px;color: white; 
+    font-style: italic;">Security Logos And Payment Methods</h3></td></tr>
+<tr><td><dl style="margin-left:50px;
+            font-style:italic;color:beige;font-size:15px;">
+                            <dd>About us</dd>
+                            <dd>Careers</dd>
+                            <dd>Blog</dd>
+                             </dl></td>
+<td><dl style="margin-left:80px;font-style:italic;color:beige;font-size:15px;">
+   <a href="http://facebook.com/shatrughnasankrit">
+       <dd><img src="./Mobile/images/facebook.png"></dd></a>
+  <a href="http://twitter.com/chhotushatrughna">
+      <dd><img src="./Mobile/images/twitter.png"</dd></a>
+  <a href="http://instagram.com/singhsankrit">
+      <dd><img src="./Mobile/images/instagram.png"</dd></a>
+                        </dl></td>
+<td><dl style="margin-left:90px;font-style:italic;color:beige;font-size:18px;">
+                <dd>Your Account</dd><dd>Delivery speed and charges</dd>
+                <dd>Return Policy</dd><dd>Terms and conditions</dd></dl></td>
+ <td><img src="./Mobile/images/footer_logos.png" style="margin-left: 150px;">       
+                    </td></tr></table>       
+        </div></section>   
+<section><footer><img src="./Mobile/images/footer.jpg"width="1335px;">
+    </footer></section>
+<section>
+<p style="color:royalblue;"><b>Shopping on RockShop.com</b><br>
+If you want to buy any mobile then log into RockShop.com. Well, let's make it
+simple for you.Say you have to buy a apple iphone present for your expecting
+friend,all you need to do in log into RockShop.com and browse through the
+countless mobile options available for you.And  buy the product and present
+Your gift at the time have it delivered right to your friend's doorstep.
+Awesome, right? No more trips to the mall. No more getting stuck in endless
+traffic.With RockShop.com,you can replace if your product is not good.
+It's that easy.
+        </p>
+<p style="font-size:20px;font-weight:bold;color:blue;text-align:center;">
+    Thanks to Browsing My Shopping Site.</p>
+    </section>
+  </body></html>

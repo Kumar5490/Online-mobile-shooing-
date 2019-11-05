@@ -1,0 +1,184 @@
+<html>
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <link rel="stylesheet" type="text/css" href="css1.css">
+  <script type="text/javascript" src="ms.js"></script>
+ </head>
+<body>
+<section><header class="header" style="background:#232f3e;">
+<div class="logo" style="width:150px;height:10px;margin-left:20px;
+     padding-top: 10px;">RockShop<sub>.com</sub></div>
+<div class="right" style="float: right;color: white; margin-right: 20px;">
+ <span class="drop-down"><a onmouseover="AccFunction()"class="drop-btn">
+  <font size="5px;">Hi,<%String email=(String)session.getAttribute("email");
+     if(email!=null)
+     {out.print(email);}%></a>
+    <span id="Drop-down" class="dropdowncontent">
+      <a href="">Your Order</a>
+      <a href="">Track order</a>
+      <a href="../logout.jsp">LogOut</a></span></span></div>
+    
+ <div id="search" class="" style="text-align: center; margin-left: 100px;">
+  <form  name="searchform" method="GET"  action="search.jsp" >
+   <select size="1" name="Category" style="height:45px; width:120px;
+           font-size:25px;">
+   <option selected="" value="All">All</option>
+   <option value="Acer">Acer</option>
+   <option value="Apple">Apple</option><option value="Asus">Asus</option>
+   <option value="Blackberry">Blackberry</option>
+   <option value="Gionee">Gionee</option>
+   <option value="htc">htc</option><option value="intex">intex</option>
+   <option value="Lava">Lava</option><option value="Lenovo">Lenovo</option>
+   <option value="Micromax">Micromax</option>
+   <option value="Microsoft">Microsoft</option>
+   <option value="Motorola">Motorola</option>
+   <option value="Nokia">Nokia</option>
+   <option value="Onida">Onida</option><option value="Oppo">Oppo</option>
+   <option value="Panasonic">Panasonic</option>
+  <option value="Samsung">Samsung</option><option value="Sony">Sony</option>
+   <option value="Spice">Spice</option><option value="Vivo">Vivo</option>
+   <option value="Xiomee">Xiomee</option><option value="Xolo">Xolo</option>
+   <option value="Zen">Zen</option><option value="Zte">Zte</option></select>
+
+ <input type="text" size="20" name="Prodname"
+        placeholder="Find your best deal for Today!"
+        value="" style="width:500px; height:45px; font-size:25px;">
+ <input  id="button" type="submit" name="Search" value="Search"
+         action="../search.jsp"
+         style="height:45px; width:100px;font-size:25px;">
+	 </form></div>
+    
+<div class="hbottom" style="width:1300px; margin-left:15px;
+     border:3px solid gray;">        
+ <span><a href="../index.jsp" style="color:white;">Home</a></span>
+  <!--Mobiles Dropdown starts-->
+<span class="dropdown" style=""><a onmouseover="myFunction()"
+                                   class="dropbtn">Mobile</a>
+<span id="myDropdown" class="dropdown-content">
+    <table><tbody><tr><td rowspan="2"><dl><dt>Brands</dt>
+    <dd><a href="acer.jsp">
+       <img src="Acer/acer .jpg"height="35px;"></a></dd>
+    <dd><a href="apple.jsp">
+       <img src="Apple/AppleBrand.jpg"height="30px;"></a></dd>
+   <dd><a href="asus.jsp">
+      <img src="Asus/is.jpg"height="40px;"></a></dd>
+   <dd><a href="blackberry.jsp">
+  <img src="Blackberry/BlackBerryBrand.jpg"height="30px;"></a></dd>
+   <dd><a href="gionee.jsp">
+ <img src="Gionee/GioneeBrand.jpg"height="30px;"></a></dd></dl></td>        
+  <td rowspan="2"><dl><dd><a href="htc.jsp"height="40px;">
+  <img src="htc/HtcBrand.jpg"></a></dd>
+  <dd> <a href="intex.jsp">
+    <img src="Intex/intex.jpg"height="30px;"></a></dd>
+  <dd><a href="iball.jsp">
+    <img src="iBall/iball.jpg"height="40px;"width="80px;"></a></dd>
+  <dd><a href="lava.jsp">
+   <img src="Lava/lava.jpg"></a></dd>
+  <dd><a href="lenovo.jsp">
+   <img src="Lenovo/lenovoBrand.jpg"></a></dd></dl></td>
+  <td rowspan="2"><dl><dd><a href="micromax.jsp">
+   <img src="Micromax/MicromaxBrand.jpg"></a></dd>
+   <dd><a href="motorola.jsp">
+   <img src="Motorola/moto.jpg"height="40px;"width="80px;"></a></dd>
+  <dd><a href="nokia.jsp">
+   <img src="Nokia/NokiaBrand.jpg"></a></dd>
+  <dd><a href="oppo.jsp">
+   <img src="Oppo/oppo.jpg"height="30px;"width="80px;"></a></dd>
+  <dd><a href="panasonic.jsp">
+   <img src="panasonicLogo.png"height="30px;"></a></dd></dl></td>
+  <td rowspan="2"><dl><dd><a href="./Mobile/samsung.jsp">
+   <img src="Samsung/samsungLogo.png"></a></dd>
+  <dd><a href="sony.jsp">
+   <img src="Sony/SonyBrand.jpg"width="70px;"></a></dd>
+  <dd><a href="vivo.jsp">
+   <img src="vivo.jpg"height="30px;"width="80px;"></a></dd>
+  <dd><a href="xiomee.jsp">
+   <img src="xiaomi.jpg"height="40px;"></a></dd>
+  <dd><a href="xolo.jsp">
+    <img src="XoloBrand.jpg"height="30px;"></a></dd>
+ </dl></td></tr></tbody></table></span> </span>
+
+<a href="../Tablets/tablets.jsp"><span>Tablets</span></a>
+<span class="dropdown"><a onmouseover="Function()"
+                          class="dropbtn">Accessories</a></span>
+		
+<span class="log" style="width: 200px;height:50px; margin-left:100px;">
+    <a  href="../login.jsp" style="color:white;">Login</a></span>
+    <a href="../Register.jsp" style="color:white;">
+ <span class="reg">Signup</span></a>
+ <span class="cart">
+  <a href="" style="color:white;">
+     Cart(<%String Qty=(String)session.getAttribute( "Qty" );
+     if(Qty!=null){out.print(Qty);}%>)</a></span></div></header></section>
+   <!--Header section Ends..-->
+<marquee><font size="25px;">Welcome to RockShop.com</font></marquee>
+
+<br><br>
+<pre>
+<font face=arial size=6 color=blue>
+<br><br>
+                             Internet is very means for people communicating and 
+                full-filling their needs and exchanging ideas.  Many Universities, 
+                Educational Institutions, non-profit oriented organisation are 
+                on Internet providing their services on net. 
+
+	        	Applications on Internet  are  playing a very vital role
+           in the application development, which is providing all round solutions
+           right from the mails to Electronic-Commerce. Target of the current IT
+           industry is E-Commerce and Distributed Applications.
+
+                    This site provide all online mobile shopping.In future,
+		   this company provide different types of gadgets.
+		
+</pre>
+</font>
+
+<section><div style="background:#000033;">
+<table>
+<tr><td ><h3 style="margin-left:50px;color:white;
+             font-style:italic;">Get to know us</h3></td>
+<td><h3 style="margin-left: 80px;color: white;"
+        font-style: italic;>Connect to us</h3></td>
+<td><h3 style="margin-left: 100px;color: white; 
+        font-style: italic;">Let us help You</h3></td>
+ <td><h3 style="margin-left: 150px;color: white; 
+    font-style: italic;">Security Logos And Payment Methods</h3></td></tr>
+<tr><td><dl style="margin-left:50px;
+            font-style:italic;color:beige;font-size:15px;">
+                            <dd>About us</dd>
+                            <dd>Careers</dd>
+                            <dd>Blog</dd>
+                             </dl></td>
+<td><dl style="margin-left:80px;font-style:italic;color:beige;font-size:15px;">
+   <a href="http://facebook.com/shatrughnasankrit">
+       <dd><img src="./Mobile/images/facebook.png"></dd></a>
+  <a href="http://twitter.com/chhotushatrughna">
+      <dd><img src="./Mobile/images/twitter.png"</dd></a>
+  <a href="http://instagram.com/singhsankrit">
+      <dd><img src="./Mobile/images/instagram.png"</dd></a>
+                        </dl></td>
+<td><dl style="margin-left:90px;font-style:italic;color:beige;font-size:18px;">
+                <dd>Your Account</dd><dd>Delivery speed and charges</dd>
+                <dd>Return Policy</dd><dd>Terms and conditions</dd></dl></td>
+ <td><img src="./Mobile/images/footer_logos.png" style="margin-left: 150px;">       
+                    </td></tr></table>       
+        </div></section>   
+<section><footer><img src="./Mobile/images/footer.jpg"width="1335px;">
+    </footer></section>
+<section>
+<p style="color:royalblue;"><b>Shopping on RockShop.com</b><br>
+If you want to buy any mobile then log into RockShop.com. Well, let's make it
+simple for you.Say you have to buy a apple iphone present for your expecting
+friend,all you need to do in log into RockShop.com and browse through the
+countless mobile options available for you.And  buy the product and present
+Your gift at the time have it delivered right to your friend's doorstep.
+Awesome, right? No more trips to the mall. No more getting stuck in endless
+traffic.With RockShop.com,you can replace if your product is not good.
+It's that easy.
+        </p>
+<p style="font-size:20px;font-weight:bold;color:blue;text-align:center;">
+    Thanks to Browsing My Shopping Site.</p>
+    </section>
+  </body></html>
+</body>
+</html>>
